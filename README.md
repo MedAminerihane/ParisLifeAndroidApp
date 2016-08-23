@@ -6,7 +6,7 @@ ParisLife est votre guide ultime à paris :
 * un Guide des bonnes adresses : bars, clubs, restaurants, musées galeries ...
 
 
-<b>This Application is Available On the Samsung App Store .</b>  
+<b>This Application is Available  through the Samsung App Store .</b>  
 <br>
 <br>
 
