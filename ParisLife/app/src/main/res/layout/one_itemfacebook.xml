@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp">
+
+    <!-- Thumbnail Image -->
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:id="@+id/imagefbprofile"
+        android:layout_width="60dp"
+        android:layout_height="60dp"></com.facebook.login.widget.ProfilePictureView>
+
+
+    <TextView
+        android:id="@+id/nomprofile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imagefbprofile"
+        android:layout_marginTop="20dp"
+        android:hint="Autres"
+        android:textColor="@color/com_facebook_likeview_text_color"
+        android:fontFamily="sans-serif"
+
+        android:textSize="@dimen/guillotine_item_text_size"
+        android:layout_marginLeft="10dp"
+
+        />
+
+
+
+
+
+
+</RelativeLayout>

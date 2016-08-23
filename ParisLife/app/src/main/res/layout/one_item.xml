@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+    android:background="@drawable/listshadow"
+android:padding="4dp">
+
+<!-- Thumbnail Image -->
+<ImageView
+    android:id="@+id/thumbnail"
+    android:layout_width="90dp"
+    android:layout_height="80dp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginRight="8dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_profile"
+
+   />
+
+<!-- Movie Title -->
+    <TextView
+        android:id="@+id/categories"
+        android:layout_width="wrap_content"
+        android:singleLine="true"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:hint="Autres"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="@color/DarkBlue"
+        android:fontFamily="sans-serif-light"    />
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/categories"
+    android:layout_toRightOf="@+id/thumbnail"
+    android:hint="Event Name"
+    android:textColor="@color/blackcolor"
+    android:singleLine="true"
+    android:fontFamily="sans-serif"
+    android:textSize="18sp"
+
+    android:textStyle="bold" />
+
+<!-- Rating -->
+<TextView
+    android:id="@+id/lieu"
+    android:singleLine="true"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/name"
+    android:layout_marginTop="2dip"
+    android:layout_toRightOf="@+id/thumbnail"
+    android:hint="90-1015"
+
+    android:fontFamily="sans-serif-light"
+   android:textColor="@color/blackcolor"
+    android:textSize="15sp"
+
+   />
+
+<!-- Genre -->
+<TextView
+    android:id="@+id/description"
+    android:layout_width="fill_parent"
+    android:singleLine="true"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lieu"
+    android:layout_marginTop="2dp"
+    android:layout_toRightOf="@+id/thumbnail"
+    android:hint="Autres"
+    android:textColor="@color/DarkGrey"
+    android:fontFamily="sans-serif-condensed"
+
+    android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/description"
+
+        android:src="@drawable/arrowright" />
+
+</RelativeLayout>

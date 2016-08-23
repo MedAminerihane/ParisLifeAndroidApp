@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guillotine_background_dark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:contentInsetStart="0dp"
+        style="@style/Toolbar"
+        >
+
+        <ImageView
+            android:id="@+id/content_hamburger"
+            style="@style/ImageView.Hamburger"
+            android:src="@drawable/ic_menu_90" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/guillotine_item_text_size" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+           >
+            <ImageView
+
+                android:id="@+id/amis"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ami1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <ImageView
+
+                android:id="@+id/favoris"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/start1"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        <ImageView
+
+            android:id="@+id/share_event"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/fb1"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/img_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+
+                    android:src="@drawable/ic_profile"
+                    />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_bg"
+                android:layout_margin="@dimen/fab_margin"
+                android:padding="8dp"
+                >
+
+
+
+
+                    <!-- Thumbnail Image -->
+
+                <TextView
+                    android:id="@+id/dateEvent"
+                    android:singleLine="true"
+                    android:text="test test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/DarkGrey"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="14sp"
+                    />
+                    <TextView
+                        android:id="@+id/name_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Event Name"
+                        android:text="test test"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="sans-serif"
+                     android:textSize="20sp"
+
+                        />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                  >
+                    <TextView
+                        android:id="@+id/categorie"
+                        android:singleLine="true"
+                        android:text="test test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:textColor="@android:color/holo_red_light"
+                        android:fontFamily="sans-serif-light"
+
+                        android:textSize="18sp"
+                        />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right">
+                <TextView
+                    android:id="@+id/accees"
+                    android:singleLine="true"
+                    android:text="test test"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/DarkBlue"
+                    android:fontFamily="sans-serif-light"
+
+                    android:textSize="12sp"
+                    />
+</LinearLayout>
+</LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/custom_bg"
+                android:layout_marginBottom="@dimen/fab_margin"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:padding="8dp">
+                >
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    android:id="@+id/map"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+                <TextView
+                android:id="@+id/lieuEvent"
+                android:singleLine="true"
+                android:text="test test"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/widget_edittext_dark"
+                android:fontFamily="sans-serif-condensed"
+                    android:layout_marginLeft="2dp"
+
+                android:textSize="18sp"
+                />
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="1dp"
+                    >
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/gpsmark"/>
+                <TextView
+                    android:id="@+id/adresseEvent"
+                    android:singleLine="true"
+                    android:text="test test"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/secondary_text_light"
+                    android:fontFamily="sans-serif-light"
+                    android:textSize="15sp"
+                    />
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="right">
+                  <TextView
+                      android:id="@+id/distanceEvent"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:textColor="@android:color/secondary_text_dark"
+                      android:fontFamily="sans-serif-light"
+                     />
+</LinearLayout>
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:background="@drawable/custom_bg"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:layout_marginRight="@dimen/fab_margin"
+                    android:layout_marginBottom="@dimen/fab_margin"
+
+                    android:padding="8dp">
+                    >
+
+                    <TextView
+                        android:id="@+id/desc_event"
+                        android:layout_width="fill_parent"
+                        android:text="test test description : DU CHING CHONG MATUIDI CHARO, ça fait drôle de dire ça "
+
+                        android:layout_height="fill_parent"
+                        android:layout_margin="5dp"
+
+                        android:hint="Autres"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+            </LinearLayout>
+                <Button
+                    android:id="@+id/btn_participer"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:fontFamily="sans-serif"
+                    android:text="Participer"
+android:layout_margin="@dimen/fab_margin"
+                    android:elevation="8dp"
+                    android:translationZ="8dp"
+
+                    />
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>
+
+

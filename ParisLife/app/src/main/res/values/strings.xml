@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ParisLife</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="facebook_app_id">321419847981884</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splash">ParisLife</string>
+    <string name="parse_app_id">FuvhpF8OiijSgB7tLVrghZTDPYSi65ThKXhjEwHo</string>
+    <string name="parse_client_key">pDsKfQAMh3vRSZs7XIqTUhI76m93WApQt27lNecJ</string>
+    <string name="MAP_API_KEY">AIzaSyCa2vQxv1OrgqlOnOuguwM3tKhiYgEVqYw</string>
+
+    <string name="accueil">Accueil</string>
+    <string name="favoris">Mes Favoris</string>
+    <string name="about">À Propos</string>
+    <string name="logout">Déconnexion</string>
+    <string name="activity">ACTIVITY</string>
+    <string name="settings">SETTINGS</string>
+    <string name="title_activity_evennement">EvennementActivity</string>
+    <string name="title_place_picker">PlaceActivity</string>
+    <string name="title_place_api">PlaceApi</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string-array name="specialite_arrays">
+    <item>Toutes les catégories</item>
+    <item>Concert</item>
+        <item>Peinture</item>
+        <item>Spectacles</item>
+        <item>Projection</item>
+        <item>Expositions</item>
+        <item>Activités</item>
+        <item>Soirée</item>
+        <item>Festival </item>
+
+    </string-array>
+    <string name="title_activity_guide">Guide</string>
+
+    <string name="title_activity_detail">Detail_Activity</string>
+    <string name="title_activity_actu__detail">Actu_Detail</string>
+    <string name="title_activity_favorit">Favorit</string>
+    <string name="title_activity_apropos">Apropos</string>
+</resources>

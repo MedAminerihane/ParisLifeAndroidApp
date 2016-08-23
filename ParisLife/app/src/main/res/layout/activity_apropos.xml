@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/guillotine_background_dark"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/list_divider"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:contentInsetStart="0dp"
+            style="@style/Toolbar"
+            >
+
+            <ImageView
+                android:id="@+id/content_hamburger"
+                style="@style/ImageView.Hamburger"
+                android:src="@drawable/ic_menu_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Les Développeurs"
+                android:layout_gravity="center"
+                android:textSize="@dimen/guillotine_item_text_size"
+                android:textColorHint="@color/com_facebook_share_button_text_color"
+                />
+
+        </android.support.v7.widget.Toolbar>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"
+            />
+    <TextView
+        android:id="@+id/Profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/name"
+        android:hint="Seifeddine Ben Abda"
+        android:layout_gravity="center"
+        android:textColorHint="@color/blackcolor"
+        android:textColor="@color/blackcolor"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/name"
+        android:hint="Seifeddine.benabda@esprit.tn"
+        android:layout_gravity="center"
+        android:textColorHint="@color/blackcolor"
+        android:textColor="@color/blackcolor"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="FaceBook Feeds" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"/>
+
+    <ListView
+        android:id="@+id/list1"
+        android:layout_width="350dp"
+        android:layout_height="50dp" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_gravity="center"
+                android:id="@+id/profile_image2"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#FFFFFF"
+                />
+            <TextView
+                android:id="@+id/Profilename2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/name"
+                android:hint="Rihane Mohamed Amine"
+                android:layout_gravity="center"
+                android:textColorHint="@color/blackcolor"
+                android:textColor="@color/blackcolor"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                />
+            <TextView
+                android:id="@+id/mail2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/name"
+                android:hint="Medamine.rihane@esprit.tn"
+                android:layout_gravity="center"
+                android:textColorHint="#F50E23"
+                android:textColor="@color/blackcolor"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="@dimen/fab_margin"
+    android:paddingRight="@dimen/fab_margin"
+    android:paddingTop="@dimen/fab_margin"
+    android:paddingBottom="@dimen/fab_margin"
+    android:background="@color/list_divider"
+    android:orientation="vertical">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <ListView
+        android:id="@+id/lvListPrisoners"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:divider="@color/list_divider"
+        android:dividerHeight="4dp"
+        android:listSelector="@drawable/list_row_selector"
+        android:scrollbars="none">
+
+    </ListView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/filter"
+            app:layout_anchor="@id/lvListPrisoners"
+            app:layout_anchorGravity="bottom|center|end"
+            app:backgroundTint="@color/primaryColorDark"
+            app:rippleColor="#FFF" />
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

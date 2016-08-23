@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapse_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:background="@color/guillotine_background"
+        android:fitsSystemWindows="true">
+
+  <ImageView
+      android:layout_marginTop="25dp"
+      android:layout_marginRight="75dp"
+     android:layout_gravity="right|top"
+      android:id="@+id/weather"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+
+     />
+
+        <TextView
+            android:layout_gravity="center|top"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:text="0"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:id="@+id/ville"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paris,FR"/>
+
+
+
+
+<ImageView
+
+android:layout_gravity="left"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sunny1"/>
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+    <FrameLayout
+
+
+        android:id="@+id/fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
